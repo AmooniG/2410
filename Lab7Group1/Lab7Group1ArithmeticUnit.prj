@@ -1,0 +1,4 @@
+vhdl work "Lab7Group1HA.vhd"
+vhdl work "Lab7Group1FA.vhd"
+vhdl work "Lab7Group1BINLOGIC.vhd"
+vhdl work "Lab7Group1ArithmeticUnit.vhd"
