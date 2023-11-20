@@ -25,15 +25,31 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name=".prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name=".stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name=".xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group14BITALU.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group14BITALU.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group14BITALU.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Lab7Group14BITALU.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Lab7Group14BITALU.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Lab7Group14BITALU.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Lab7Group14BITALU.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group14BITALU.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group14BITALU.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Lab7Group14BITALU.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group14BITALU.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Lab7Group14BITALU_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Lab7Group14BITALU_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab7Group14BITALU_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1ArithmeticUnit.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1ArithmeticUnit.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1ArithmeticUnit.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1BINLOGIC.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1BINLOGIC.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1BINLOGIC.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Lab7Group1DECODER.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Lab7Group1DECODER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1DECODER.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Lab7Group1DECODER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1DECODER.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Lab7Group1DECODER_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Lab7Group1DECODER_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Lab7Group1DECODER_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1FA.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1FA.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1FA.xst"/>
@@ -43,13 +59,60 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1LOGICUNIT.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1LOGICUNIT.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1LOGICUNIT.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1MUX.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1MUX.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1MUX.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7Group1ONESTAGEALU.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Lab7Group1ONESTAGEALU.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Lab7Group1ONESTAGEALU.xst"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1700487533" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1700487533">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700490468" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5257225036565125222" xil_pn:start_ts="1700490468">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700490468" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9141784505734547912" xil_pn:start_ts="1700490468">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700487533" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1700487533">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700490468" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6040032494566012764" xil_pn:start_ts="1700490468">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700487533" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1700487533">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700490468" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5419103055915412370" xil_pn:start_ts="1700490468">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1700491406" xil_pn:in_ck="5157849802259343379" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="191189264492084833" xil_pn:start_ts="1700491394">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.lso"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.ngc"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.ngr"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.prj"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.syr"/>
+      <outfile xil_pn:name="Lab7Group14BITALU.xst"/>
+      <outfile xil_pn:name="Lab7Group14BITALU_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>

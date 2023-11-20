@@ -1,11 +1,11 @@
 set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
--ifn Lab7Group14BITALU.prj
--ofn Lab7Group14BITALU
+-ifn Lab7Group1DECODER.prj
+-ofn Lab7Group1DECODER
 -ofmt NGC
 -p xc6slx16-2-csg324
--top Lab7Group14BITALU
+-top Lab7Group1DECODER
 -opt_mode Speed
 -opt_level 1
 -power NO

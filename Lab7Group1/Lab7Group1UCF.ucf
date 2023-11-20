@@ -1,19 +1,22 @@
-NET SW0 LOC = T10; //Slide switches 
-NET SW1 LOC = T9; 
-NET SW2 LOC = V9;
-NET SW3 LOC = M8; 
-NET SW4 LOC = N8; 
-NET SW5 LOC = U8; 
-NET SW6 LOC = V8; 
-NET SW7 LOC = T5; 
+NET A(3) LOC = T5; //Slide switches 
+NET A(2) LOC = V8; 
+NET A(1) LOC = U8;
+NET A(0) LOC = N8; 
 
-NET BTN1 LOC = P149; // Pushbutton switches 
+NET B(3) LOC = M8; //Slide switches 
+NET B(2) LOC = V9; 
+NET B(1) LOC = T9; 
+NET B(0) LOC = T10; 
 
-NET LD0 LOC = U16; //LEDs 
-NET LD1 LOC = V16; 
-NET LD2 LOC = U15; 
-NET LD3 LOC = V15; 
-NET LD4 LOC = M11; 
-NET LD5 LOC = N11; 
-NET LD6 LOC = R11; 
-NET LD7 LOC = T11; 
+NET S2 LOC = C4;
+NET S(1) LOC = B8;
+NET S(0) LOC = D9;
+
+
+NET F(6) LOC = T17; //LEDs 
+NET F(5) LOC = T18;
+NET F(4) LOC = U17;
+NET F(3) LOC = U18; 
+NET F(2) LOC = M14; 
+NET F(1) LOC = N14;
+NET F(0) LOC = L14; 

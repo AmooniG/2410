@@ -41,36 +41,34 @@ end Lab7Group1ONESTAGEALU;
 
 architecture Behavioral of Lab7Group1ONESTAGEALU is
 component Lab7Group1ArithmeticUnit is
-    Port ( CIN : in  STD_LOGIC;
-           A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
+    Port ( A, B, CIN : in STD_LOGIC;
            S : in STD_LOGIC_VECTOR(1 downto 0);
-           COUT : out  STD_LOGIC;
-           ArithOUT : out  STD_LOGIC);
+           ArithOUT, COUT : out  STD_LOGIC);
 end component;
 
 component Lab7Group1LOGICUNIT is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           S : in  STD_LOGIC_VECTOR (1 downto 0);
-           LOUT : out  STD_LOGIC);
+    Port ( S : in  STD_LOGIC_VECTOR (1 downto 0);
+	        LOUT : out  STD_LOGIC;
+			  A : in  STD_LOGIC;
+           B : in  STD_LOGIC);
+end component;
+
+component Lab7Group1MUX is
+    Port ( M : in  STD_LOGIC;
+           N : in  STD_LOGIC;
+           S : in  STD_LOGIC;
+           MOUT : out  STD_LOGIC);
 end component;
 
 signal ALUOUT ,Lout : STD_LOGIC;
 
 begin
 
-Arithmetic: Lab7Group1ArithmeticUnit port map (A, B, Cin,S, Aout,Cout);
+Arithmetic: Lab7Group1ArithmeticUnit port map (A, B, CIN,S, ALUOUT,Cout);
 Logic: Lab7Group1LOGICUNIT port map(S,Lout,A,B);
 
 -- use outputs from each component as inputs into the 2 - 1 MUX. This uses 0/1 as select
-up: process(ArithIN, LogicIN, S2)
-	begin
-	if S2 = '0' then
-		ALUOUT <= ArithIN;
-	else
-		ALUOUT <= LogicIN;
-	end if;
-	end process;
+Mux: Lab7Group1MUX port map (ALUOUT ,LOUT,S2,G);
+
 end Behavioral;
 

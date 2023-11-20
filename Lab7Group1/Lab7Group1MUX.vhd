@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    14:36:19 11/13/2023 
+-- Create Date:    13:54:50 11/13/2023 
 -- Design Name: 
--- Module Name:    Lab7Group1LOGICUNIT - Behavioral 
+-- Module Name:    to1mux - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,26 +29,23 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Lab7Group1LOGICUNIT is
-    Port ( S : in  STD_LOGIC_VECTOR (1 downto 0);
-	        LOUT : out  STD_LOGIC;
-			  A : in  STD_LOGIC;
-           B : in  STD_LOGIC);
-end Lab7Group1LOGICUNIT;
+entity Lab7Group1MUX is
+    Port ( M : in  STD_LOGIC;
+           N : in  STD_LOGIC;
+           S : in  STD_LOGIC;
+           MOUT : out  STD_LOGIC);
+end Lab7Group1MUX;
 
-architecture Behavioral of Lab7Group1LOGICUNIT is
+architecture Behavioral of Lab7Group1MUX is
+
 begin
-	up: process (A,B, S(0), S(1))
-		begin
-		if (S(0) = '0' and S(1) = '0') then
-			LOUT <= A AND B;
-		elsif (S(0) = '1' AND S(1) = '0') then
-			LOUT <= A OR B;
-		elsif (S(0) = '0' AND S(1) = '1') then
-			LOUT <= A XOR B;
-		else
-			LOUT <= (NOT A);
-		end if;
-		end process;
+ process (M,N,S) is
+            begin
+                if (S ='0') then
+                   MOUT <= M;
+                else
+                    MOUT <= N;
+                end if;
+        end process;
 end Behavioral;
 
